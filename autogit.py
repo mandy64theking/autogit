@@ -6,9 +6,9 @@ from bs4 import BeautifulSoup
 url = "https://github.com/login"
 username = "ENTER USERNAME"
 password = "ENTER PASSWORD"
-options = webdriver.ChromeOptions()
+options = webdriver.ChromeOptions() #Use FirefoxOptions() if you use firefox driver
 options.add_argument('--headless')
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(options=options) #replace with Chrom with Firefox
 
 driver.implicitly_wait(30)
 driver.get(url)
