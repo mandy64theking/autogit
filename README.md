@@ -7,3 +7,7 @@ AutoGit is a python file which helps you automate the process of creating a GitH
 ## Links to Download WebDriver
 - 1.Chrome WebDriver https://sites.google.com/a/chromium.org/chromedriver/
 - 2.Mozilla WebDriver https://github.com/mozilla/geckodriver/
+## Command
+`py autogit.py repo_name repo_mode`
+- Replace`repo_name`by Name of the Repository
+- Replace`repo_mode`by Public/Private
