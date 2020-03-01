@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import requests
 import sys
-from bs4 import BeautifulSoup
 url = "https://github.com/login"
 username = "ENTER USERNAME"
 password = "ENTER PASSWORD"
@@ -29,3 +28,8 @@ else:
 
 driver.find_element_by_xpath(
     "/html/body/div[4]/main/div/form/div[3]/button").submit()
+link=driver.find_element_by_id("empty-setup-clone-url").get_attribute("value")
+print("A Github git repository has been created on "+str(link))
+driver.get("https://github.com/logout")
+driver.find_element_by_xpath("/html/body/div[4]/main/div/form/input[3]").submit()
+driver.close()
